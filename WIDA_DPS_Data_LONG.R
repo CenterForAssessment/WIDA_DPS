@@ -22,9 +22,9 @@ setnames(tmp_LONG, c("ID", "GRADE_2017", "GRADE_2016", "SCALE_SCORE_2017", "SCAL
 
 WIDA_DPS_Data_LONG <- data.table(
     ID=rep(tmp_LONG$ID, 2),
-    GRADE=as.character(as.numeric(c(tmp_LONG$GRADE_2017, tmp_LONG$RADE_2016))),
+    GRADE=as.character(as.numeric(c(tmp_LONG$GRADE_2017, tmp_LONG$GRADE_2016))),
     SCALE_SCORE=as.numeric(c(tmp_LONG$SCALE_SCORE_2017, tmp_LONG$SCALE_SCORE_2016)),
-    ACHIEVEMENT_LEVEL=c(tmp_LONG$ACHIEVEMENT_LEVEL_2017, tmp_LONG$ACHIEVEMENT_LEVEL_2016),
+    ACHIEVEMENT_LEVEL=paste0("L", floor(as.numeric(c(tmp_LONG$ACHIEVEMENT_LEVEL_2017, tmp_LONG$ACHIEVEMENT_LEVEL_2016)))),
     YEAR=c(rep("2017", dim(tmp_LONG)[1]), rep("2016", dim(tmp_LONG)[1])),
     VALID_CASE="VALID_CASE",
     CONTENT_AREA="READING",
