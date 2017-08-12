@@ -1,0 +1,243 @@
+
+Started abcSGP Friday August 11 09:29:51 2017
+
+
+	abcSGP(
+		 sgp_object = WIDA_DPS_Data_LONG
+		steps = c("prepareSGP", "analyzeSGP", "combineSGP", "outputSGP")
+		sgp.percentiles = TRUE
+		sgp.projections = TRUE
+		sgp.projections.lagged = TRUE
+		sgp.percentiles.baseline = FALSE
+		sgp.projections.baseline = FALSE
+		sgp.projections.lagged.baseline = FALSE
+		sgp.target.scale.scores = FALSE )
+
+
+Started prepareSGP Friday August 11 09:29:52 2017
+
+
+	prepareSGP(
+		 data = sgp_object
+		data_supplementary = data_supplementary
+		state = state
+		var.names = prepareSGP.var.names
+		create.additional.variables = prepareSGP.create.additional.variables
+		fix.duplicates = fix.duplicates )
+
+Finished prepareSGP Friday August 11 09:29:52 2017 in 0.051 Seconds 
+
+	CSEMs are required in SGPstateData to simulate SGPs for confidence interval calculations. Confidence intervals will not be calculated.
+
+Started analyzeSGP Friday August 11 09:29:52 2017
+
+
+	analyzeSGP(
+		 sgp_object = sgp_object
+		state = state
+		years = years
+		content_areas = content_areas
+		grades = grades
+		sgp.percentiles = sgp.percentiles
+		sgp.projections = sgp.projections
+		sgp.projections.lagged = sgp.projections.lagged
+		sgp.percentiles.baseline = sgp.percentiles.baseline
+		sgp.projections.baseline = sgp.projections.baseline
+		sgp.projections.lagged.baseline = sgp.projections.lagged.baseline
+		sgp.minimum.default.panel.years = sgp.minimum.default.panel.years
+		sgp.use.my.coefficient.matrices = sgp.use.my.coefficient.matrices
+		sgp.test.cohort.size = sgp.test.cohort.size
+		return.sgp.test.results = return.sgp.test.results
+		simulate.sgps = simulate.sgps
+		calculate.simex = calculate.simex
+		calculate.simex.baseline = calculate.simex.baseline
+		goodness.of.fit.print = goodness.of.fit.print
+		sgp.config = sgp.config
+		parallel.config = parallel.config
+		verbose.output = verbose.output
+		get.cohort.data.info = get.cohort.data.info
+		sgp.sqlite = sgp.sqlite
+		sgp.percentiles.equated = sgp.percentiles.equated
+		sgp.percentiles.equating.method = sgp.percentiles.equating.method
+		sgp.percentiles.calculate.sgps = sgp.percentiles.calculate.sgps
+		SGPt = SGPt
+		fix.duplicates = fix.duplicates )
+
+	Started studentGrowthPercentiles: Friday August 11 09:29:52 2017
+		Content Area: READING, Year: 2017, Grade Progression: 11, 12  (N=276)
+	Finished studentGrowthPercentiles: Friday August 11 09:29:52 2017 in 0.317 Seconds
+
+	Started studentGrowthPercentiles: Friday August 11 09:29:52 2017
+		Content Area: READING, Year: 2017, Grade Progression: 10, 11  (N=475)
+	Finished studentGrowthPercentiles: Friday August 11 09:29:52 2017 in 0.324 Seconds
+
+	Started studentGrowthPercentiles: Friday August 11 09:29:53 2017
+		Content Area: READING, Year: 2017, Grade Progression: 9, 10  (N=782)
+	Finished studentGrowthPercentiles: Friday August 11 09:29:53 2017 in 0.238 Seconds
+
+	Started studentGrowthPercentiles: Friday August 11 09:29:53 2017
+		Content Area: READING, Year: 2017, Grade Progression: 8, 9  (N=1,336)
+	Finished studentGrowthPercentiles: Friday August 11 09:29:53 2017 in 0.407 Seconds
+
+	Started studentGrowthPercentiles: Friday August 11 09:29:53 2017
+		Content Area: READING, Year: 2017, Grade Progression: 7, 8  (N=1,372)
+	Finished studentGrowthPercentiles: Friday August 11 09:29:54 2017 in 0.972 Seconds
+
+	Started studentGrowthPercentiles: Friday August 11 09:29:54 2017
+		Content Area: READING, Year: 2017, Grade Progression: 6, 7  (N=1,417)
+	Finished studentGrowthPercentiles: Friday August 11 09:29:55 2017 in 0.402 Seconds
+
+	Started studentGrowthPercentiles: Friday August 11 09:29:55 2017
+		Content Area: READING, Year: 2017, Grade Progression: 5, 6  (N=1,442)
+	Finished studentGrowthPercentiles: Friday August 11 09:29:55 2017 in 0.419 Seconds
+
+	Started studentGrowthPercentiles: Friday August 11 09:29:55 2017
+		Content Area: READING, Year: 2017, Grade Progression: 4, 5  (N=2,164)
+	Finished studentGrowthPercentiles: Friday August 11 09:29:56 2017 in 0.722 Seconds
+
+	Started studentGrowthPercentiles: Friday August 11 09:29:56 2017
+		Content Area: READING, Year: 2017, Grade Progression: 3, 4  (N=2,367)
+	Finished studentGrowthPercentiles: Friday August 11 09:29:57 2017 in 0.988 Seconds
+
+	Started studentGrowthPercentiles: Friday August 11 09:29:57 2017
+		Content Area: READING, Year: 2017, Grade Progression: 2, 3  (N=2,631)
+	Finished studentGrowthPercentiles: Friday August 11 09:29:58 2017 in 1.175 Seconds
+
+	Started studentGrowthPercentiles: Friday August 11 09:29:58 2017
+		Content Area: READING, Year: 2017, Grade Progression: 1, 2  (N=2,487)
+	Finished studentGrowthPercentiles: Friday August 11 09:29:59 2017 in 0.981 Seconds
+
+	Started studentGrowthPercentiles: Friday August 11 09:29:59 2017
+		Content Area: READING, Year: 2017, Grade Progression: 0, 1  (N=2,193)
+	Finished studentGrowthPercentiles: Friday August 11 09:30:00 2017 in 1.078 Seconds
+
+	Started studentGrowthProjections: Friday August 11 09:30:00 2017
+		Content Area: READING, Year: 2017, Grade Progression: 0  (N=50)
+	Finished studentGrowthProjections: Friday August 11 09:30:00 2017 in 0.371 Seconds
+
+	Started studentGrowthProjections: Friday August 11 09:30:00 2017
+		Content Area: READING, Year: 2017, Grade Progression: 1  (N=2,227)
+	Finished studentGrowthProjections: Friday August 11 09:30:05 2017 in 4.963 Seconds
+
+	Started studentGrowthProjections: Friday August 11 09:30:05 2017
+		Content Area: READING, Year: 2017, Grade Progression: 2  (N=2,548)
+	Finished studentGrowthProjections: Friday August 11 09:30:09 2017 in 4.096 Seconds
+
+	Started studentGrowthProjections: Friday August 11 09:30:09 2017
+		Content Area: READING, Year: 2017, Grade Progression: 3  (N=2,666)
+	Finished studentGrowthProjections: Friday August 11 09:30:13 2017 in 3.768 Seconds
+
+	Started studentGrowthProjections: Friday August 11 09:30:13 2017
+		Content Area: READING, Year: 2017, Grade Progression: 4  (N=2,378)
+	Finished studentGrowthProjections: Friday August 11 09:30:18 2017 in 4.616 Seconds
+
+	Started studentGrowthProjections: Friday August 11 09:30:18 2017
+		Content Area: READING, Year: 2017, Grade Progression: 5  (N=2,173)
+	Finished studentGrowthProjections: Friday August 11 09:30:22 2017 in 3.764 Seconds
+
+	Started studentGrowthProjections: Friday August 11 09:30:22 2017
+		Content Area: READING, Year: 2017, Grade Progression: 6  (N=1,475)
+	Finished studentGrowthProjections: Friday August 11 09:30:23 2017 in 1.739 Seconds
+
+	Started studentGrowthProjections: Friday August 11 09:30:23 2017
+		Content Area: READING, Year: 2017, Grade Progression: 7  (N=1,430)
+	Finished studentGrowthProjections: Friday August 11 09:30:25 2017 in 1.325 Seconds
+
+	Started studentGrowthProjections: Friday August 11 09:30:25 2017
+		Content Area: READING, Year: 2017, Grade Progression: 8  (N=1,388)
+	Finished studentGrowthProjections: Friday August 11 09:30:26 2017 in 1.019 Seconds
+
+	Started studentGrowthProjections: Friday August 11 09:30:26 2017
+		Content Area: READING, Year: 2017, Grade Progression: 9  (N=1,636)
+	Finished studentGrowthProjections: Friday August 11 09:30:27 2017 in 0.861 Seconds
+
+	Started studentGrowthProjections: Friday August 11 09:30:27 2017
+		Content Area: READING, Year: 2017, Grade Progression: 10  (N=903)
+	Finished studentGrowthProjections: Friday August 11 09:30:27 2017 in 0.316 Seconds
+
+	Started studentGrowthProjections: Friday August 11 09:30:27 2017
+		Content Area: READING, Year: 2017, Grade Progression: 11  (N=577)
+	Finished studentGrowthProjections: Friday August 11 09:30:27 2017 in 0.139 Seconds
+
+	Started studentGrowthProjections: Friday August 11 09:30:27 2017
+		Content Area: READING, Year: 2017, Grade Progression: 0 LAGGED (N=2,193)
+	Finished studentGrowthProjections: Friday August 11 09:30:33 2017 in 5.62 Seconds
+
+	Started studentGrowthProjections: Friday August 11 09:30:33 2017
+		Content Area: READING, Year: 2017, Grade Progression: 1 LAGGED (N=2,487)
+	Finished studentGrowthProjections: Friday August 11 09:30:38 2017 in 5.106 Seconds
+
+	Started studentGrowthProjections: Friday August 11 09:30:38 2017
+		Content Area: READING, Year: 2017, Grade Progression: 2 LAGGED (N=2,631)
+	Finished studentGrowthProjections: Friday August 11 09:30:43 2017 in 5.446 Seconds
+
+	Started studentGrowthProjections: Friday August 11 09:30:43 2017
+		Content Area: READING, Year: 2017, Grade Progression: 3 LAGGED (N=2,367)
+	Finished studentGrowthProjections: Friday August 11 09:30:47 2017 in 3.963 Seconds
+
+	Started studentGrowthProjections: Friday August 11 09:30:47 2017
+		Content Area: READING, Year: 2017, Grade Progression: 4 LAGGED (N=2,164)
+	Finished studentGrowthProjections: Friday August 11 09:30:51 2017 in 3.496 Seconds
+
+	Started studentGrowthProjections: Friday August 11 09:30:51 2017
+		Content Area: READING, Year: 2017, Grade Progression: 5 LAGGED (N=1,442)
+	Finished studentGrowthProjections: Friday August 11 09:30:53 2017 in 1.871 Seconds
+
+	Started studentGrowthProjections: Friday August 11 09:30:53 2017
+		Content Area: READING, Year: 2017, Grade Progression: 6 LAGGED (N=1,417)
+	Finished studentGrowthProjections: Friday August 11 09:30:54 2017 in 1.53 Seconds
+
+	Started studentGrowthProjections: Friday August 11 09:30:54 2017
+		Content Area: READING, Year: 2017, Grade Progression: 7 LAGGED (N=1,372)
+	Finished studentGrowthProjections: Friday August 11 09:30:56 2017 in 1.259 Seconds
+
+	Started studentGrowthProjections: Friday August 11 09:30:56 2017
+		Content Area: READING, Year: 2017, Grade Progression: 8 LAGGED (N=1,336)
+	Finished studentGrowthProjections: Friday August 11 09:30:56 2017 in 0.868 Seconds
+
+	Started studentGrowthProjections: Friday August 11 09:30:56 2017
+		Content Area: READING, Year: 2017, Grade Progression: 9 LAGGED (N=782)
+	Finished studentGrowthProjections: Friday August 11 09:30:57 2017 in 0.591 Seconds
+
+	Started studentGrowthProjections: Friday August 11 09:30:57 2017
+		Content Area: READING, Year: 2017, Grade Progression: 10 LAGGED (N=475)
+	Finished studentGrowthProjections: Friday August 11 09:30:57 2017 in 0.207 Seconds
+
+	Started studentGrowthProjections: Friday August 11 09:30:57 2017
+		Content Area: READING, Year: 2017, Grade Progression: 11 LAGGED (N=276)
+	Finished studentGrowthProjections: Friday August 11 09:30:57 2017 in 0.082 Seconds
+
+Finished analyzeSGP Friday August 11 09:31:02 2017 in 1 Minute, 10 Seconds 
+
+Started combineSGP Friday August 11 09:31:02 2017
+Finished combineSGP Friday August 11 09:31:02 2017 in 0.322 Seconds 
+
+
+Started outputSGP Friday August 11 09:31:02 2017: Files produced from outputSGP saved in 'Data'
+
+
+
+	outputSGP(
+		 sgp_object = sgp_object
+		state = state
+		output.type = outputSGP.output.type
+		outputSGP_SUMMARY.years = years
+		outputSGP_SUMMARY.content_areas = content_areas
+		outputSGP_INDIVIDUAL.years = years
+		outputSGP_INDIVIDUAL.content_areas = content_areas
+		outputSGP.student.groups = intersect(names(sgp_object@Data), subset(sgp_object@Names, names.type == "demographic" & names.output == TRUE, select = names.provided, drop = TRUE))
+		outputSGP.directory = outputSGP.directory )
+
+	Started LONG data production in outputSGP Friday August 11 09:31:02 2017
+	Finished LONG data production in outputSGP Friday August 11 09:31:03 2017 in 0.399 Seconds 
+
+	Started LONG FINAL YEAR data production in outputSGP Friday August 11 09:31:03 2017
+	Finished LONG FINAL YEAR data production in outputSGP Friday August 11 09:31:03 2017 in 0.242 Seconds 
+
+	Started WIDE data production in outputSGP Friday August 11 09:31:03 2017
+	Finished WIDE data production in outputSGP Friday August 11 09:31:03 2017 in 0.341 Seconds 
+
+Finished outputSGP Friday August 11 09:31:03 2017 in 0.997 Seconds 
+
+Finished abcSGP Friday August 11 09:31:03 2017 in 1 Minute, 12 Seconds 
+
