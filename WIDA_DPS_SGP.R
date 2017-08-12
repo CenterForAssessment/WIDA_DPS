@@ -18,8 +18,7 @@ load("Data/WIDA_DPS_Data_LONG.Rdata")
 
 WIDA_DPS_SGP <- abcSGP(
 		WIDA_DPS_Data_LONG,
-#		steps=c("prepareSGP", "analyzeSGP", "combineSGP", "visualizeSGP", "outputSGP"),
-		steps=c("prepareSGP", "analyzeSGP", "combineSGP", "outputSGP"),
+		steps=c("prepareSGP", "analyzeSGP", "combineSGP", "visualizeSGP", "outputSGP"),
 		sgp.percentiles=TRUE,
 		sgp.projections=TRUE,
 		sgp.projections.lagged=TRUE,
@@ -27,9 +26,9 @@ WIDA_DPS_SGP <- abcSGP(
 		sgp.projections.baseline=FALSE,
 		sgp.projections.lagged.baseline=FALSE,
 		sgp.target.scale.scores=FALSE)#,
-#		plot.types=c("growthAchievementPlot", "studentGrowthPlot"),
-#		sgPlot.demo.report=TRUE,
-#		parallel.config=list(BACKEND="PARALLEL", WORKERS=list(PERCENTILES=4, BASELINE_PERCENTILES=4, PROJECTIONS=4, LAGGED_PROJECTIONS=4, SGP_SCALE_SCORE_TARGETS=4, GA_PLOTS=1, SG_PLOTS=1)))
+		plot.types=c("growthAchievementPlot", "studentGrowthPlot",
+		sgPlot.demo.report=TRUE,
+		parallel.config=list(BACKEND="PARALLEL", WORKERS=list(PERCENTILES=4, BASELINE_PERCENTILES=4, PROJECTIONS=4, LAGGED_PROJECTIONS=4, SGP_SCALE_SCORE_TARGETS=4, GA_PLOTS=1, SG_PLOTS=1)))
 
 
 ### Save results
